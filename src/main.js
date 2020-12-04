@@ -9,12 +9,13 @@ export default class App {
     }
 
     contarImparesFor(inicio,fin) {
-        let impares = 0;
+        
         if(inicio > fin) {
             let t = inicio;
             inicio = fin;
             fin = t;
         }
+        let impares = 0;
 
         for(let i = inicio; i <= fin; i++) {
             if(i % 2 !== 0) {
